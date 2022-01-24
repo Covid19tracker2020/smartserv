@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<TITLE>
+Login Page
+</TITLE>
+<style>
+
+body{
+background-color:#3E3D3D;
+}
+#login{
+background-color:#272626;
+height:350px;
+width:350px;
+text-align:center;
+padding:10px;
+border-radius:20px;
+margin:10% auto;
+display:block;
+}
+
+#forget{
+color:#929090;
+}
+
+#username{
+border-radius:6px;
+margin-top:20px;
+padding:6px;
+width:48%;
+}
+#pass{
+border-radius:6px;
+padding:6px;
+margin-top:10px;
+width:48%;
+}
+#submit{
+border-radius:10px;
+padding:6px;
+text-align:center;
+width:52%;
+background-color:green;
+color:white;
+margin-top:8%;
+margin-bottom:3%;
+}
+#submit:hover{
+opacity:0.7;
+}
+</style>
+</HEAD>
+<body>
+<div id="login">
+<form>
+<img src="download.jpg">
+<br>
+<input type="email" id="username" placeholder="Username">
+<br>
+<input type="password" id="pass" name="psw" placeholder="Password" pattern="(?=.*\d)(?=.*[A-Z])(?=.*?[0-9])(?=.*?[@]).{8,}" title="Must contain at least one number,one uppercase and shouldn't use any special characters other than '@'" required>
+<br> 
+<input type="submit" value="Submit" id="submit">
+<br>
+<a href="#" id="forget"> Forgot your password?</a>
+</form>
+</div>
+<script>
+
+</script>
+</body>
+</HTML>
